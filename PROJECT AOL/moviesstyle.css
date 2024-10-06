@@ -1,0 +1,904 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  nav{
+    background: black;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 2em;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 1.1em;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;
+  }
+
+  nav ul li button{
+    align-items: center;
+    width: 130px;
+    height : 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-right: 3em;
+    transition: .5s;
+}
+
+nav ul li button a{
+    align-items: center;
+    margin-left: 5px;
+}
+
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: black;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+    }
+    nav ul li button{
+        margin:0;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+.home{
+    padding: 0;
+}
+
+.home .box{
+    min-height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-color: gray;
+    background-image : url(./Photo/Dr._Romantic_2.jpg);
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    padding: 2rem 9%;
+    padding-top: 10rem;
+}
+
+.home .box{
+    background-color: gray;
+}
+
+.home .box{
+    justify-content: flex-start;
+}
+
+.home .box .content h3{
+    font-size: 2.5rem;
+    color: white;
+    padding-top: .5rem;
+    text-transform: uppercase;
+}
+
+.home .box .content p{
+    line-height : 2;
+    color: white;
+    font-size: 1.25rem;
+    padding : 1rem 0;
+}
+
+.home .box .content .btn{
+    align-items: center;
+    width: 250px;
+    height : 50px;
+    background: transparent;
+    border: 2px solid red;
+    background-color: red;
+    justify-content: center;
+    display: flex;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 500;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+/* .btn{
+    align-items: center;
+    width: 250px;
+    height : 50px;
+    background: transparent;
+    border: 2px solid red;
+    background-color: red;
+    justify-content: center;
+    display: flex;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 500;
+    transition: .5s;
+    text-decoration: none;
+} */
+
+.action .swiper-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.drama .swiper-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fantasy .swiper-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.comedy .swiper-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.heading{
+    margin-top: 3rem;
+    font-size: 2rem;
+    margin-left: 4.25rem;
+    margin-bottom: 1rem;
+}
+
+.heading2{
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-left: 4.25rem;
+    margin-bottom: 1rem;
+}
+
+.heading3{
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-left: 4.25rem;
+    margin-bottom: 1rem;
+}
+
+.heading4{
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-left: 4.25rem;
+    margin-bottom: 1rem;
+}
+
+
+.action .swiper-slide1{
+   margin : 2px;
+}
+
+.action .box{
+    width: 240px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.action .box-2{
+    width: 240px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.action .box-3{
+    width: 240px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.action .box-4{
+    width: 240px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.action .box-5{
+    width: 240px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.action .box{
+    background: url(./Photo/8gjbGKe5WNOaLrkoeOUPLvDhPhK.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: gray;
+}
+
+.action .box-2{
+    background: url(./Photo/dmnwJGVergOFWCiLbPsQTyyzePw.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: gray;
+}
+
+.action .box-3{
+    background: url(./Photo/Vagabond_2019.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: gray;
+}
+
+.action .box-4{
+    background: url(./Photo/p24179080_b_v13_ab.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: gray;
+}
+
+.action .box-5{
+    background: url(./Photo/titans.png);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: gray;
+}
+
+.drama .swiper-slide1{
+    margin : 2px;
+ }
+ 
+.drama .box{
+    width: 240px;
+    height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .drama .box-2{
+    width: 240px;
+    height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .drama .box-3{
+    width: 240px;
+    height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .drama .box-4{
+    width: 240px;
+    height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .drama .box-5{
+    width: 240px;
+    height: 300px;
+    border-radius: 15px;
+ }
+
+ .drama .box{
+    background: url(./Photo/250px-Dr._Romantic_2_Poster.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex ;
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.drama .box-2{
+    background: url(./Photo/The_Good_Bad_Mother-p1.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.drama .box-3{
+    background: url(./Photo/Romantic_Doctor_Teacher_Kim_Poster.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.drama .box-4{
+    background: url(./Photo/Our_Beloved_Summer\ \(1\).jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.drama .box-5{
+    background: url(./Photo/abusinessproposal\ 7.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.fantasy .swiper-slide1{
+    margin : 2px;
+ }
+ 
+.fantasy .box{
+     width: 240px;
+     height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .fantasy .box-2{
+     width: 240px;
+     height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .fantasy .box-3{
+     width: 240px;
+     height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .fantasy .box-4{
+     width: 240px;
+     height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .fantasy .box-5{
+     width: 240px;
+     height: 300px;
+     border-radius: 15px;
+ }
+
+ .fantasy .box{
+    background: url(./Photo/228ec56ba62ff38afa7734ff71db348d.jpeg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.fantasy .box-2{
+    background: url(./Photo/aos.png);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.fantasy .box-3{
+    background: url(./Photo/supergirl.png);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.fantasy .box-4{
+    background: url(./Photo/flash.png);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.fantasy .box-5{
+    background: url(./Photo/RiIz9JgyoN.jpeg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.comedy .swiper-slide1{
+    margin : 2px;
+    margin-bottom: 5rem;
+ }
+ 
+.comedy .box{
+     width: 240px;
+     height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .comedy .box-2{
+     width: 240px;
+     height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .comedy .box-3{
+     width: 240px;
+     height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .comedy .box-4{
+     width: 240px;
+     height: 300px;
+     border-radius: 15px;
+ }
+ 
+ .comedy .box-5{
+     width: 240px;
+     height: 300px;
+     border-radius: 15px;
+ }
+
+ .comedy .box{
+    background: url(./Photo/manvsbee_.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.comedy .box-2{
+    background: url(./Photo/download.jpeg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.comedy .box-3{
+    background: url(./Photo/p16621396_b_v10_aa.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.comedy .box-4{
+    background: url(./Photo/MV5BYmMxNjM0NmItNGU1Mi00OGMwLTkzMzctZmE3YjU1ZDE4NmFjXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.comedy .box-5{
+    background: url(./Photo/p20738800_b_v13_ae.jpg);
+    background-size: 240px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+footer{
+    margin-top: 4rem;
+    /* position: fixed; */
+    background-color: black;
+    width: 100%;
+    bottom : 0;
+    left: 0;
+    
+}
+
+footer::before{
+    content: '';
+    position: relative;
+    left: 0;
+    top : 100px;
+    height: 1px;
+    width: 100%;
+    background: gray;
+}
+
+footer{
+    margin-top: 4rem;
+    /* position: fixed; */
+    background-color: black;
+    width: 100%;
+    bottom : 0;
+    left: 0;
+    
+}
+
+footer::before{
+    content: '';
+    position: relative;
+    left: 0;
+    top : 100px;
+    height: 1px;
+    width: 100%;
+    background: gray;
+}
+
+footer .content1{
+    max-width: 1250px;
+    margin : auto;
+    padding : 30px 40px 40px 40px;
+}
+
+footer .content1 .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.logo_name{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+footer .content1 .link-boxes{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: space-between ;
+}
+
+footer .content1 .link-boxes .box{
+    background-color: black;
+    width: calc(100% /5-10px);
+}
+
+.content1 .link-boxes .box .link_name{
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position : relative;
+}
+
+.content1 .link-boxes .box li{
+    margin: 6px 0;
+    list-style: none;
+}
+
+.content1 .link-boxes .box li a{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+footer .bottom-details{
+    width: 100%;
+    background:black;
+    padding-bottom: 1rem;
+}
+
+footer .bottom-details .bottom-text{
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-details .bottom-text span{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.content1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+    footer .content1 .link-boxes{
+      flex-wrap: wrap;
+    }
+    footer .content1 .link-boxes .input-box{
+      width: 40%;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 700px){
+    footer{
+      position: relative;
+    }
+    .content1 .top .logo-details{
+      font-size: 26px;
+    }
+
+    footer .content1 .link-boxes .box{
+      width: calc(100% / 3 - 10px);
+    }
+    footer .content1 .link-boxes .input-box{
+      width: 60%;
+    }
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a{
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 520px){
+    footer::before{
+      top: 145px;
+    }
+    footer .content1 .top{
+      flex-direction: column;
+    }
+
+    footer .content1 .link-boxes .box{
+      width: calc(100% / 2 - 10px);
+    }
+    footer .content1 .link-boxes .input-box{
+      width: 100%;
+    }
+  }
+
+  /* @media(max-width: 768px){
+    .home .box{
+        background-position: center;
+        padding: 2rem 9%;
+        padding-top:4rem;
+        padding-bottom:3rem;
+        margin:0;
+        min-height: 30vh;
+    }
+
+    .home .box .content h3{
+        font-size: 1rem;
+        color: white;
+        padding-top: .5rem;
+        text-transform: uppercase;
+    }
+    
+    .home .box .content p{
+        line-height : 2;
+        color: white;
+        font-size: 1rem;
+        padding : 1rem 0;
+    }
+
+    .heading{
+        padding-top: 3rem;
+
+        margin-left: 7rem;
+        margin-bottom: 1rem;
+        padding-left: 0;
+    }
+
+    .home .box .content .btn{
+        align-items: center;
+        width: 150px;
+        height : 25px;
+        background: transparent;
+        border: 2px solid red;
+        background-color: red;
+        justify-content: center;
+        display: flex;
+        outline: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 1em;
+        color: white;
+        font-weight: 500;
+        transition: .5s;
+    }
+ } */
+
+ @media(max-width: 768px){
+    .home .box{
+        background-position: center;
+        padding: 2rem 9%;
+        padding-top:4rem;
+        padding-bottom:3rem;
+        margin:0;
+        min-height: 30vh;
+    }
+
+    .home .box .content h3{
+        font-size: 1rem;
+        color: white;
+        padding-top: .5rem;
+        text-transform: uppercase;
+    }
+    
+    .home .box .content p{
+        line-height : 2;
+        color: white;
+        font-size: 0.8rem;
+        padding : 1rem 0;
+    }
+
+    .heading{
+        padding-top: 3rem;
+        font-size: 1rem;
+        margin-left: 7rem;
+        margin-bottom: 1rem;
+        padding-left: 0;
+    }
+
+    .home .box .content .btn{
+        align-items: center;
+        width: 150px;
+        height : 25px;
+        background: transparent;
+        border: 2px solid red;
+        background-color: red;
+        justify-content: center;
+        display: flex;
+        outline: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 1em;
+        color: white;
+        font-weight: 500;
+        transition: .5s;
+    }
+
+    .heading{
+        margin-top: 3rem;
+        font-size: 2rem;
+        margin-left: 8.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .heading2{
+        margin-top: 1rem;
+        font-size: 2rem;
+        margin-left: 8.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .heading3{
+        margin-top: 1rem;
+        font-size: 2rem;
+        margin-left: 8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .heading4{
+        margin-top: 1rem;
+        font-size: 2rem;
+        margin-left: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    .comedy .box{
+        background: url(./Photo/manvsbee_.jpg);
+        background-size: 240px 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 1rem;
+        background-color: black;
+    }
+    
+    .comedy .box-2{
+        background: url(./Photo/download.jpeg);
+        background-size: 240px 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 1rem;
+        background-color: black;
+    }
+    
+    .comedy .box-3{
+        background: url(./Photo/p16621396_b_v10_aa.jpg);
+        background-size: 240px 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 1rem;
+        background-color: black;
+    }
+    
+    .comedy .swiper-slide1{
+        margin : 2px;
+        margin-bottom: 0rem;
+     }
+
+ }
+  
+  

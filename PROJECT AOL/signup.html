@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./signupstyle.css">
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <nav>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">JeTFlix
+        </label>
+  
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="news.html">News & Popular</a></li>
+          <li><a href="movies.html">Movies</a></li>  
+          <li><button class="SignUpBtn"><a href="signup.html">Sign Up</a></button></li>
+        </ul>
+      </nav>
+    
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+
+
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="password2">Confirm Password</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error"></div>
+            </div>
+
+
+            <div class="input-control">
+                <label for="Date of Birth">Date of Birth</label>
+                <div class = "abc">
+                    
+                    <select id="month"name="month" type="month">
+                        <option value="month">Month</option>
+                        <option value="january">January</option>
+                        <option value="February">February</option>
+                    </select>
+    
+                    <select id="days"name="days" type="days">
+                        <option value="days">Days</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+    
+                    <select id="Year"name="Year" type="Year">
+                        <option value="Year">Year</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                    </select>
+
+                </div>
+                 
+                <div class="error"></div>  
+
+            </div>
+
+            <div class="input-control">
+                <label for="gender">Gender</label>
+                <select id="gender"name="gender" type="gender">
+                    <option value="select-gender">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <div class = "agg">
+                    <input id="checkbox" name="checkbox" type="checkbox">
+                    <label for="agree">I agree to these terms & conditions</label>
+                    
+                </div>
+                <div class="error"></div>
+            </div>
+
+
+
+            <button type="submit" class="submit" onclick = "validate()">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
